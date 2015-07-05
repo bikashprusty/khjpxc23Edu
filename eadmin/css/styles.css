@@ -1,0 +1,733 @@
+body{
+	font: normal 14px Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	padding: 0;
+	margin: 0;
+}
+a:link,a:visited,a:active{
+	color: #00A9FF;
+	text-decoration:none;
+}
+a:hover,a.active{
+	color: #444;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.hidden{
+	display:none;
+}
+.clearall{
+	clear:both;
+}
+.screen-reader-only{
+	position:absolute;
+	left:-10000px;
+	z-index:-9999;
+}
+.Container {
+	width: 980px;
+	height: 100%;
+	margin:0 auto;
+}
+.header {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 15px 0 25px;
+	padding: 20px;
+	position: relative;
+}
+.headContainer {
+	height:110px;
+}
+.logo {
+	width: auto;
+	float: left;
+}
+.leftShadow, .rightShadow{
+	background: url("../images/liftedshadow_medium.png") left 0 transparent;
+	width: 165px;
+	height: 26px;
+	position: relative;
+	bottom: -21px;
+	float: left;
+}
+.rightShadow {
+	background-position: right 0;
+	position: relative;
+	float: right;
+	top: 21px;
+}
+.topmenu {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 40px;
+}
+.topmenu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.topmenu ul li {
+	float: left;
+	width: auto;
+	padding: 3px 15px 3px 15px;
+}
+.topmenu ul li a{
+	color:#00A9FF;
+	text-decoration:none;
+	font-size:14px;	
+	font-weight: bold;
+}
+.topmenu ul li a:hover{
+	color:#444;
+}
+.topmenu ul li.userStatus {
+	border-left: 1px solid #ccc;
+}
+.middle {
+	padding: 0 0 20px 0;
+	min-height: 580px;
+}
+.middle .left {
+	width: 40%;
+}
+.middle .right {
+	width: 59%;
+}
+.font3{
+font : normal normal normal 49px/1.1em 'times new roman', times, serif;
+line-height:
+}
+.right .font3 {
+	width: 70%;
+	margin: 120px 0 0 130px;
+}
+.right .font3 .apost{
+	font-family:monospace;
+}
+#submitForm{
+	width:0;
+	height:0;
+	display:none;
+	border:none;
+}
+.formInter{
+	position:relative;
+}
+.formInter ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.formInter ul li{
+	left:0;
+	top:0;
+	background-color:#FFFFFF;
+	
+}
+.formInter ul li.active{
+	z-index:1;
+}
+.formInter ul li .blockHead{
+	display: block;
+	width: auto;
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	padding: 8px 15px;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 4px 4px 0 0;
+	color: #00a9ff;
+	background: #efefef;
+	cursor: pointer;	
+}
+.formInter ul li.active .blockHead {
+	border-bottom: 1px solid #fff;
+	z-index: 3;
+	background-color: #fff;
+	position: relative;
+	cursor: default;
+}
+.formInter .blockDetail{
+	display: none;
+	border: 1px solid #ccc;
+	width: 95%;
+	padding: 10px 16px;
+	background-color: #FFFFFF;
+	margin: 31px 0 20px;
+}
+.formInter .blockDetail.active{
+	display:block;
+	z-index:1;
+}
+.formInter ul li .blockDetail h3{
+	color: #00A9FF;
+	padding: 0 0 5px 0;
+	margin: 0 0 5px 0;
+}
+.formWraper fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.formRow {
+	font-size: 16px;
+	margin: 5px 0;
+	color: #999;
+}
+.userNameTips{
+	color:#333;
+	font-size:12px;
+}
+.formRow .opt{
+	font-size:12px;
+}
+.formRow input[type=text],.formRow input[type=password],.formRow select {
+	padding: 10px 3px;
+	width: 97%;
+	border-radius: 5px;
+	border: 1px solid #333;
+	box-shadow: 2px 1px 6px #888888;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+input[type=text].available{
+	border: 1px solid #ff0000;
+	box-shadow: 2px 1px 6px #ff0000;	
+}
+input[type=text].not-available{
+	border: 1px solid #00ff00;
+	box-shadow: 2px 1px 6px #00ff00;	
+}
+.formRow textarea{
+	width:97%;
+	padding: 10px 3px;
+	border-radius: 5px;
+	border: 1px solid #333;
+	box-shadow: 2px 1px 6px #888888;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;	
+}
+.postService .buttonContainer input,
+.formRow input[type=submit],.formRow input[type=button],.formRow input.btn, .customBtn{
+	background-color: #00a9ff;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	padding: 5px 20px;
+	font-family: Helvetica;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+}
+.formRow a#forgotPass {
+	font-size: 12px;
+	margin-right: 10px;
+}
+.footer {
+	width: 100%;
+	display: block;
+	clear: both;
+	border-top: 5px solid #00a9ff;
+}
+.footerWraper{
+	margin:0 auto;
+	width:60%;
+	padding:5px 0;
+}
+
+/*	contact Page START	*/
+
+.contactForm .formRow {
+	margin: 5px 0 10px;
+}
+.dashboard h2,
+.loginPage h3,
+.contactForm h3{
+	color:#00A9FF;
+}
+
+/*	contact Page ENDS	*/
+/*	login Page START	*/
+.loginPage .formRow {
+	margin: 5px 0 15px;
+}
+.loginPage .formInter {
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+}
+
+.loginPage .formInter .loginWraper{
+	width: 40%;
+	margin: 0 auto;
+	border: 2px solid #ececec;
+	padding: 10px 76px;
+	border-radius: 5px;
+	box-shadow: 2px 10px 16px #888;}
+/*	login Page ENDS	*/
+
+/*	dash board SATRTS */
+.dashboard .message{
+	margin:10px 0;
+}
+.leftBlock,
+.dashboard .leftBlock {
+	width:49%;
+	float:left;
+}
+.dashboard .dashBlocks {
+	margin: 0px 20px 20px 0;
+	float: left;
+	border: 1px solid #ececec;
+	border-radius: 5px;
+	padding: 20px;
+	width: 87%;
+	max-height:200px;
+	overflow-y: auto;
+}
+.dashboard .dashBlocks h3 {
+	padding: 0;
+	margin: 0 0 10px 0;
+	font-size: 18px;
+	color: #666;
+}
+.dashboard .dashBlocks ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.dashboard .dashBlocks ul li {
+	margin-bottom:8px;	
+	clear:both; 
+	display:table;
+}
+.dashboard .dashBlocks ul li div {
+	float:left;
+	display:table-cell;
+}
+.cnt {
+	width:30px;
+	padding:3px 0 0;	
+}
+.requestBy,.srvsName{
+	width:100px;
+	padding:3px 0 0;
+}
+.srvsDt {
+	width:75px;
+	padding:3px 0 0;
+}
+/*	dash board ENDS */
+/*	services STARTS */
+
+.middle.services .left {
+width: 100%;
+}
+.message span {
+	padding: 10px;
+	background-color: #0c3;
+	display: block;
+	color: #fff;
+	font-weight: bold;
+}
+
+.errormessage span {
+	padding: 10px;
+	background-color: #c00;
+	display: block;
+	color: #fff;
+	font-weight: bold;
+}
+.services ul li,.services ul li .blockDetail{
+	background-color:#FFFFFF;
+}
+.services ul li .blockDetail.postService{
+}
+.addservice .hzBlock{
+	width:30%;
+	float:left;
+	margin-right:20px;
+}
+table#tblServices {
+	width: 80%;
+}
+table#tblServices th{
+	padding:3px 5px 3px 0;
+}
+table#tblServices td.cols{
+	padding:3px 0;
+	border-top: 1px solid #ececec;
+}
+table#tblServices th.serial {
+	width: 10%;
+}
+table#tblServices th.servicName {
+	width: 35%;
+}
+table#tblServices th.servicDesc {
+	width: 40%;
+}
+table#tblServices th.servicEdit {
+	width: 10%;
+}
+
+.rateThisService{
+	/*background: url("../images/ratings.png") no-repeat 0 0 #00a9ff;*/
+	width: 100px;
+	display: block;
+	z-index: 2;
+	position: absolute;
+}
+.rateBg{
+	background-color: #FF0000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 9px 0;
+	z-index: 0;
+	width: 100px;
+}
+/*	services ENDS */
+/*	postServices STARTS	*/
+
+.postSevviceWraper {
+	display: table;
+	padding: 20px 0;
+}
+.postSevviceWraper .leftCol {
+	width: 200px;
+	border-right: 1px solid #ccc;
+	display:table-cell;
+}
+.postSevviceWraper .serviceList {
+	width: 200px;
+	max-height: 400px;
+	overflow-y: auto;
+}
+.postSevviceWraper .serviceList li{
+	padding:8px 0px;
+	clear:both;
+}
+.postSevviceWraper .serviceList .chkBoxContnr {
+	width: 20px;
+	float: left;
+}
+.postSevviceWraper .serviceList .Services {
+	float: left;
+	width: 162px;
+}
+.postSevviceWraper .rightCol {
+	width: 720px;
+	display:table-cell;	
+	padding-left:9px;
+}
+
+.postSevviceWraper h4 {
+	margin: 0;
+}
+.postServiceList{
+	width:100%;
+}
+.postServiceList th,
+.postServiceList td {
+	padding:3px 2px;
+}
+.postServiceList td {
+	border-top: 1px solid #ccc;
+	padding:6px 6px 6px 2px;	
+}
+.postServiceList td input[type='text'] {
+	padding: 8px 3px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	width:95%
+}
+.tdservice {
+	width: 160px;
+}
+.tdprice {
+	width: 85px;
+}
+.tdsunit {
+	width: 110px;
+}
+.tdtime {
+	width: 110px;
+}
+.tdcoment {
+	width: 180px;
+}
+.postServiceList .activity{
+	background-color: #CCC;
+	border-radius: 7px;
+	height: 14px;
+	display: block;
+	width: 24px;
+}
+.postServiceList .disable,
+.postServiceList .enable {
+	background-color: #00FF00;
+	border-radius: 50%;
+	height: 14px;
+	display: block;
+	width: 13px;
+	cursor:pointer;
+}
+.postServiceList .disable {
+	background-color: #FF0000;
+	float: right;
+}
+.buttonContainer{
+	padding:10px;
+	margin:10px;
+}
+.postServiceList .buttonContainer input{
+	padding:4px 10px;
+	background-color:
+}
+/*	postServices ENDS	*/
+/*	wanted services STARTS */
+
+.wantedServices {
+
+}
+.wantedServices .formRow{
+	width: 400px;
+	float:left;	
+}
+.wantedServices .formRow.btnContainer{
+	padding-top: 7px;
+	float: left;
+	width: 200px;
+	padding-left: 10px;
+}
+
+/*	wanted services ENDS */
+/*	MASTERs MANAGEMENT (STARTS)*/
+
+.mastersMgt{
+	padding:10px 0;	
+}
+.mastersMgt .pageContent,
+.mastersMgt .leftMenu {
+	float:left;
+	width:77%;	
+}
+.mastersMgt .pageContent{
+	padding: 10px 0 0 10px;
+	border:1px solid #ececec;
+	border-radius:5px;
+	min-height:300px;
+}
+.mastersMgt .pageContent h2{
+	margin:0;
+}
+.mastersMgt .leftMenu {
+	float: left;
+	width: 20%;
+}
+.leftMenu ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.leftMenu ul li {
+	margin: 5px 0;
+	position: relative;
+	border: 1px solid #ececec;
+	border-right: none;	
+}
+
+.leftMenu ul li.active {
+border-right: none;
+}
+
+.leftMenu ul li a{
+	display: block;
+	padding: 7px;
+}
+
+.leftMenu ul li.active a {
+	color: #000;
+	border-right: 2px solid #fff;
+	margin-left: 1px;
+	position: relative;
+	left: 2px;
+	z-index: 2;
+	font-size:13px;
+}
+/*	MASTERs MANAGEMENT (STARTS)*/
+
+/*	COUNTRY MANAGEMENT (STARTS)	*/
+
+.stateMgtWraper .stateMgt,
+.countryMgtWraper .countryMgt{
+	width:300px;
+}
+.stateMgt .formRow,
+.countryMgt .formRow{
+	clear:both;
+	margin-bottom:10px;
+}
+
+/* SERVICE SERACH (STARTS)	*/
+
+#searchResults {
+	clear: both;
+	display: block;
+	height: auto;
+	margin: 21px 0 0;
+}
+.searchedList {
+	clear: both;
+	margin: 10px 0 0;
+}
+.searchTable{
+	width:100%;
+	clear:both;
+}
+#searchTable td.sName {
+	width: 50%;
+}
+#searchTable td.sName .tooltip{
+	font-size:12px;
+}
+#searchTable td.sPrice {
+	width: 10%;
+}
+#searchTable td.sRatings {
+	width: 20%;
+	vertical-align:top;
+}
+#searchTable td.sRatings .ratings{
+	width: 100px;
+	position:relative;
+}
+#searchTable td.sRatings .rateThisService{
+
+}
+#searchTable td.servedNum {
+	width: 6%;
+	text-align: center;
+}
+#searchTable td.sAction {
+	padding:0 0 0 20px;
+}
+/* SERVICE SERACH (ENDS)	*/
+/* OVERLAY (STARTS)	*/
+.overlayCurtain {
+	position: fixed;
+	z-index: 998;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	-ms-filter: “alpha(opacity=75)”
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	background-color: #000;
+	border: 1px solid #fff;
+	top: 0;
+	left: 0;
+}
+.overlay{
+	width: 380px;
+	height: 190px;
+	border: 2px solid #CCC;
+	overflow-y: auto;
+	position: fixed;
+	top: 20%;
+	z-index: 9999;
+	background-color: #fff;
+	left: 27%;
+	padding:10px;
+	border-radius:5px;
+}
+#close{
+	border: 3px double #ccc;
+	border-radius: 50%;
+	padding: 3px 6px 1px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #ccc;
+	text-decoration: none;
+}
+/* OVERLAY (ENDS)	*/
+.confirmMsg {
+	padding: 7px 0px 10px;
+}
+.confirmMsg ul{
+	padding: 0 0 0 20px;
+	margin: 0px;
+	list-style: decimal;
+}
+.confirmMsg ul li{
+	margin-bottom:4px;	
+}
+.confirmMsg .btnContainer {
+	margin-top: 20px;
+}
+
+/*	RATING(STARTS)	*/
+
+.givRating{
+	width:104px;
+	height:20px;
+	position:relative;
+}
+table#tbl_rating {
+	width: 100%;
+}
+.tbl_rating td {
+	padding: 8px 0 10px;
+}
+.tbl_rating td label {
+	margin-right: 10px;
+}
+/*	RATING(ENDS)	*/
+/*	PROFLE(STARTS) */
+.profileUserDetail{
+	margin-right: 35px;
+	border:1px #eee solid;
+	border-radius:5px;
+	padding:20px;
+	margin-bottom:20px;
+}
+.profileUserDetail.leftBlock{
+	width: 42%;
+}
+.profileUserDetail.profileBlock{
+	height:220px;
+}
+.profileUserDetail.profileBlock{
+	height:280px;
+}
+.profileUserDetail .profileImgWrap{
+	margin:20px 0 0;
+	text-align:center;
+}
+.profileUserDetail.lngBlock{
+	width: 92%;
+	margin-right: 35px;
+}
+.profileUserDetail.lngBlock ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.profileUserDetail.lngBlock li {
+	width: 22%;
+	float: left;
+	padding: 7px 5px 7px 0;
+	margin: 0 10px 0 0px;
+}
+/*	PROFLE(ENDS) */

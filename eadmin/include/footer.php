@@ -1,0 +1,1 @@
+<div class="footerWraper">&copy; copy Right eserved</div>
